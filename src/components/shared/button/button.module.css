@@ -1,0 +1,77 @@
+.button {
+  cursor: pointer;
+
+  border: none;
+  font-size: 13px;
+  line-height: 19px;
+  font-weight: var(--fw-bold);
+
+  transition: var(--transition-buttons_1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.button svg {
+  transition: var(--transition-buttons_1);
+  transition-property: fill, stroke;
+}
+
+/*Custom*/
+.custom {
+  all: unset;
+}
+
+/*Fill style*/
+.fill {
+  padding: 10px 16px;
+  border-radius: 10px;
+
+  background-color: var(--color-purple);
+  color: var(--color-grey);
+  transition-property: background;
+}
+.fill svg {
+  stroke: var(--color-white);
+}
+
+/*Text style*/
+.text {
+  position: relative;
+  background-color: transparent;
+  color: var(--color-grey-darker);
+  transition-property: background;
+}
+.text::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 1.5px;
+  height: 1.5px;
+  width: 100%;
+  background-color: currentColor;
+
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform var(--transition-buttons_1);
+}
+.text svg {
+  fill: var(--color-violet);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .text:hover::after {
+    transform: scaleX(1);
+  }
+}
+
+@media screen and (min-width: 688px) {
+  .button {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .fill {
+    padding: 13px 24px;
+  }
+}
