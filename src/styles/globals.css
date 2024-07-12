@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+* {
+  font: inherit;
+}
+:root {
+  --color-purple: #ad1fea;
+  --color-purple-light: #c75af6;
+
+  --color-red: #d73737;
+  --color-red-light: #e98888;
+
+  --color-violet: #4661e6;
+  --color-violet-light: #7c91f9;
+
+  --color-dark-blue: #3a4374;
+  --color-dark-blue-light: #656ea3;
+
+  --color-blue: #62bcfa;
+
+  --color-salmon: #f49f85;
+
+  --color-white: #ffffff;
+
+  --color-light-violet: #8397f8;
+  --color-light-violet-light: #cfd7ff;
+
+  --color-grey-darkest: #373f68;
+  --color-grey-darker: #647196;
+  --color-grey: #f2f4ff;
+  --color-grey-light: #e2e3ea;
+  --color-grey-lighter: #f7f8fd;
+
+  font-size: 16px;
+  --ff: 'Jost', sans-serif;
+  --fw-bold: 700;
+  --fw-semi-bold: 600;
+  --fw-regular: 400;
+
+  /*TODO:  convert px to rem*/
+  --fs-100: 13px;
+  --fs-200: 14px;
+  --fs-300: 15px;
+  --fs-400: 16px;
+  --fs-500: 18px;
+  --fs-600: 20px;
+  --fs-700: 24px;
+
+  --section-padding: 1.5rem;
+  --section-width: 1110px;
+
+  --transition-buttons_1: 0.22s cubic-bezier(0.19, 1, 0.22, 1);
+}
+@media screen and (min-width: 688px) {
+  :root {
+    --section-padding: 2.5rem;
+  }
+}
+@media screen and (min-width: 1190px) {
+}
+
+body {
+  background-color: var(--color-grey-light);
+  font-family: var(--ff);
+}

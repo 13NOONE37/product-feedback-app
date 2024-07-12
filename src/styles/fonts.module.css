@@ -1,0 +1,50 @@
+/*TODO: narazie będziemy tworzyć style w folderach komponentów lecz jeśli jakieś się powtarzają przeniesiemy je tutaj*/
+/*TODO: change font-size for variables and convert px to rem*/
+.heading--700 {
+  font-size: var(--fs-500);
+  font-weight: var(--fw-bold);
+  line-height: 1.625rem;
+  letter-spacing: -0.015625rem;
+}
+.heading--600 {
+  font-size: var(--fs-600);
+  font-weight: var(--fw-bold);
+  line-height: 1.8125rem;
+  letter-spacing: -0.015625rem;
+}
+.heading--500 {
+  font-size: 18px;
+  font-weight: var(--fw-bold);
+  line-height: 26px;
+  letter-spacing: -0.25px;
+}
+.heading--400 {
+  font-size: 14px;
+  font-weight: var(--fw-bold);
+  line-height: 20px;
+  letter-spacing: -0.2px;
+}
+.body--1 {
+  font-size: 16px;
+  font-weight: var(--fw-regular);
+  line-height: 23px;
+}
+.body--2 {
+  font-size: 15px;
+  font-weight: var(--fw-regular);
+  line-height: 22px;
+}
+.body--3 {
+  font-size: 13px;
+  font-weight: var(--fw-semi-bold);
+  line-height: 19px;
+}
+@media screen and (min-width: 688px) {
+  .heading--700 {
+    font-size: var(--fs-700);
+    line-height: 2.1875rem;
+    letter-spacing: -0.020625rem;
+  }
+}
+@media screen and (min-width: 1410px) {
+}
