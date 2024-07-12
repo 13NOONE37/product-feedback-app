@@ -1,0 +1,54 @@
+.container {
+  container-type: inline-size;
+}
+
+.button {
+  cursor: pointer;
+  background-color: var(--color-grey);
+  border: none;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.5rem;
+
+  flex-direction: column;
+  padding: 14px 11px 8px 11px;
+
+  transition: background var(--transition-buttons_1);
+}
+@container (width > 65px) {
+  .button {
+    flex-direction: row;
+    padding: 6px 13px 6px 16px;
+  }
+}
+.button svg {
+  stroke: var(--color-violet);
+  transition: stroke var(--transition-buttons_1);
+}
+.button span {
+  font-size: 13px;
+  font-weight: var(--fw-bold);
+  line-height: 19px;
+  letter-spacing: -0.18px;
+  color: var(--color-grey-darkest);
+  transition: color var(--transition-buttons_1);
+}
+@media (hover: hover) and (pointer: fine) {
+  .button:hover {
+    background-color: var(--color-light-violet-light);
+  }
+}
+
+.button__active:not(:hover) {
+  background-color: var(--color-violet);
+}
+.button__active:not(:hover) span {
+  color: var(--color-white);
+}
+.button__active:not(:hover) svg {
+  stroke: var(--color-white);
+}
