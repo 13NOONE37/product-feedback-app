@@ -1,5 +1,4 @@
 import React, { Dispatch, FC, SetStateAction } from 'react';
-import cx from 'classnames';
 import Select from 'react-select';
 
 import styles from './dropdown.module.css';
