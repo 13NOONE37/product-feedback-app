@@ -1,5 +1,9 @@
-import { ReactNode } from 'react';
+import React, { FC, ReactNode } from 'react';
 
-export default function RoadmapLayout({ children }: { children: ReactNode }) {
+const Layout: FC<{
+  children: ReactNode;
+}> = ({ children }) => {
   return <div>{children}</div>;
-}
+};
+
+export default Layout;

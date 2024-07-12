@@ -1,9 +1,15 @@
-import { ReactNode } from 'react';
+import React, { FC, ReactNode } from 'react';
 
-export default function SuggestionsLayout({
-  children,
-}: {
-  children: ReactNode;
-}) {
-  return <div>{children}</div>;
-}
+const Layout: FC<{
+  header: ReactNode;
+  content: ReactNode;
+}> = ({ header, content }) => {
+  return (
+    <div>
+      {header}
+      {content}
+    </div>
+  );
+};
+
+export default Layout;
