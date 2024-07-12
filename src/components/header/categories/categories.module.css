@@ -1,0 +1,10 @@
+.container {
+  padding: 1.5rem;
+  display: flex;
+  align-content: start;
+  flex-wrap: wrap;
+  gap: 14px;
+
+  background-color: var(--color-white);
+  border-radius: 10px;
+}

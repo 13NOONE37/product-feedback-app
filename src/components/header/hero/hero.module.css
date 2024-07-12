@@ -1,0 +1,48 @@
+.hero {
+  padding: 1rem 1.5rem;
+  background-image: url('/images/mobile/background-header.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-white);
+}
+.description {
+  font-size: 13px;
+  font-weight: var(--fw-medium);
+  line-height: 19px;
+  opacity: 0.75;
+}
+.button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+
+  width: 20px;
+  height: 20px;
+  align-self: center;
+}
+@media screen and (min-width: 688px) {
+  .hero {
+    border-radius: 0.625rem;
+    background-image: url('/images/tablet/background-header.png');
+  }
+  .description {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .button {
+    display: none;
+  }
+}
+@media screen and (min-width: 1190px) {
+  .hero {
+    background-image: url('/images/desktop/background-header.png');
+  }
+}

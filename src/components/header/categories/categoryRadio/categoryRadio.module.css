@@ -1,0 +1,40 @@
+.container {
+}
+.input {
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;
+}
+.label {
+  cursor: pointer;
+
+  background-color: var(--color-grey);
+  border: none;
+  border-radius: 10px;
+
+  font-size: 13px;
+  font-weight: var(--fw-semi-bold);
+  line-height: 19px;
+  color: var(--color-violet);
+  text-transform: capitalize;
+
+  padding: 5px 1rem;
+  user-select: none;
+
+  transition: background var(--transition-buttons_1);
+}
+@media (hover: hover) and (pointer: fine) {
+  .label:hover {
+    background-color: var(--color-light-violet-light);
+  }
+}
+.input:focus-visible + .label {
+  outline: auto;
+}
+.input:checked + .label {
+  background-color: var(--color-violet);
+  color: var(--color-white);
+}
+
+@media screen and (min-width: 688px) {
+}

@@ -1,13 +1,13 @@
 import React, { FC, ReactNode } from 'react';
-
+import Header from '@/components/header/header';
+import styles from './layout.module.css';
 const Layout: FC<{
-  header: ReactNode;
-  content: ReactNode;
-}> = ({ header, content }) => {
+  children: ReactNode;
+}> = ({ children }) => {
   return (
-    <div>
-      {header}
-      {content}
+    <div className={styles.container}>
+      <Header />
+      {children}
     </div>
   );
 };

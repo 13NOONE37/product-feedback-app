@@ -1,0 +1,19 @@
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+@media screen and (min-width: 688px) {
+  .container {
+    padding: 56px 39px;
+    gap: 40px;
+  }
+}
+@media screen and (min-width: 1190px) {
+  .container {
+    padding: 94px 0;
+    align-items: flex-start;
+    grid-template-rows: unset;
+    grid-template-columns: 255px 1fr;
+    gap: 30px;
+  }
+}
