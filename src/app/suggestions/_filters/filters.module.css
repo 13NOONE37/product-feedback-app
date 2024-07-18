@@ -47,8 +47,6 @@
     gap: 1rem;
     padding-right: 38px;
   }
-  .suggestionsCount svg {
-  }
   .suggestionsCount h2 {
     font-size: 18px;
     font-weight: var(--fw-bold);
