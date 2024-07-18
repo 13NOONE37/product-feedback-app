@@ -15,11 +15,13 @@ const Filters = () => {
   const params = useSearchParams();
 
   useEffect(() => {
+    //If page is loaded with searchParam we apply it
     const sortParam = Object.values(SORT.OPTIONS).find(
       (item) => item.value === params.get(SORT.PARAM),
     );
     if (sortParam) setSortBy(sortParam);
   }, []);
+
   useEffect(() => {
     router.push(`/suggestions?${SORT.PARAM}=${sortBy.value}`, {
       scroll: false,
